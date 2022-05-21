@@ -1,14 +1,17 @@
-import { Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import './App.css';
+//import { Routes, Route } from 'react-router-dom';
+import DirectBar from './components/DirectBar.js'
 
 const App = () => {
+
+	var directoryList = []
+
+	for (let i = 0; i < 20; i++){
+		directoryList.push({rel:"example.com", text:`link ${i}`})
+	}
 	return (
-		<Routes>
-			<Route path="/" element={<Home />} />
-			<Route path="about" element={<About />} />
-		</Routes>
+		<>
+		<DirectBar elems={directoryList} />
+		</>
 	);
 }
 

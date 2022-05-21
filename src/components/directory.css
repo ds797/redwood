@@ -1,0 +1,22 @@
+.DirectBar{
+    position: fixed;
+    display: inline-block;
+    width: 100vw;
+}
+
+.BarElement{
+    position: relative;
+    font-size: 20px;
+    min-width: 8vw;
+    min-height: 4vw;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.BarElement:hover{
+    background-color: red;
+}
