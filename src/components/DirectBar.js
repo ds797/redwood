@@ -11,7 +11,7 @@ function DirectBar(props){
 
     return (
         <div className="DirectBar">
-            <button className="BarElement" id="barFoot">Honors Precalculus Review</button>
+            <BarElement rel={"#"} text="Honors Precalculus Review"></BarElement>
             {list}
         </div>
     )

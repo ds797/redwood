@@ -3,8 +3,8 @@ import DirectBar from './components/DirectBar.js'
 
 const App = () => {
 	var directoryList = [
-		{rel: "#", text: "Semester 1", sideHrefs: [{rel : "#", text : "Unit 1 - Trig"}]},
-		{rel: "#", text: "Semester 2", sideHrefs: [{rel : "#", text : "Unit 2 - Triangles"}]}
+		{rel: "#sem1", text: "Semester 1", sideHrefs: [{rel : "#", text : "Unit 1 - Trig"}]},
+		{rel: "#sem2", text: "Semester 2", sideHrefs: [{rel : "#", text : "Unit 2 - Triangles"}]}
 	]
 
 	return (

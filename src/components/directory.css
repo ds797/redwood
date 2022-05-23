@@ -22,6 +22,11 @@
     white-space: nowrap;
 }
 
+.BarElementWrapper{
+    position: relative;
+    float: left;
+}
+
 .BarElement:not(#barFoot){
     padding-left: 20px;
     padding-right: 20px;
@@ -30,7 +35,7 @@
     border-bottom: 0px;
 }
 
-.BarElement:hover:not(#barFoot){
+.BarElement.Rel:hover{
     color: black;
     background-color: red;
 }

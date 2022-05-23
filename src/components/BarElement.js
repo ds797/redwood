@@ -5,8 +5,12 @@ import "./directory.css"
 function BarElement(props){
     return (
         <>
-        <button className="BarElement" onclick={()=>{console.log(this.text)}}>{props.text}</button>
-        </>
+        <div className="BarElementWrapper">
+            <button className={props.rel==="#" ? "BarElement noRel" : "BarElement Rel"}>{props.text}</button>
+            <div className="dropdown" id={props.rel}>
+            </div>
+        </div>
+        </>    
     )
 }
 
