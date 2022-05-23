@@ -2,12 +2,11 @@
 import DirectBar from './components/DirectBar.js'
 
 const App = () => {
+	var directoryList = [
+		{rel: "#", text: "Semester 1", sideHrefs: [{rel : "#", text : "Unit 1 - Trig"}]},
+		{rel: "#", text: "Semester 2", sideHrefs: [{rel : "#", text : "Unit 2 - Triangles"}]}
+	]
 
-	var directoryList = []
-
-	for (let i = 0; i < 20; i++){
-		directoryList.push({rel:"example.com", text:`link ${i}`})
-	}
 	return (
 		<>
 		<DirectBar elems={directoryList} />

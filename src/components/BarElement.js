@@ -1,7 +1,12 @@
 import "./directory.css"
+
+
+
 function BarElement(props){
     return (
-        <a class="BarElement" href={props.rel}>{props.text}</a>
+        <>
+        <button className="BarElement" onclick={()=>{console.log(this.text)}}>{props.text}</button>
+        </>
     )
 }
 
