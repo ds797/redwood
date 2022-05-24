@@ -6,7 +6,7 @@ function DirectBar(props){
     var list = []
 
     for (const elem of props.elems){
-        list.push(<BarElement key={elem.rel+elem.text} rel={elem.rel} text={elem.text} sideHrefs={elem.sideHrefs}></BarElement>)
+        list.push(<BarElement manip={props.pageManipulator} key={elem.rel+elem.text} rel={elem.rel} text={elem.text} sideHrefs={elem.sideHrefs}></BarElement>)
     }
 
     return (
