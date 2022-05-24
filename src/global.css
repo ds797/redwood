@@ -1,0 +1,9 @@
+* {
+	--transition: 250ms cubic-bezier(0.100, 0.615, 0.410, 0.950);
+	transition: all var(--transition);
+}
+
+button {
+	border: none;
+	border-radius: 1rem;
+}
