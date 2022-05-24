@@ -1,7 +1,7 @@
 //import { Routes, Route } from 'react-router-dom';
 import Page from './components/Page.js'
 import DirectBar from './components/DirectBar.js'
-import './App.css';
+
 
 const App = () => {
 	var directoryList = [
