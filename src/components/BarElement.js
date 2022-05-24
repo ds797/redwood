@@ -1,10 +1,12 @@
 import "./directory.css"
 
-
+function changeMain(content){
+    console.log(1)
+}
 
 function BarElement(props){
     var list = props.sideHrefs === undefined ? [] : props.sideHrefs.map(({text})=>{
-        return <button key={text} className="BarElement Rel dropdown-element">{text}</button>
+        return <button onClick={changeMain("<h1>test</h1>")} key={text} className="BarElement Rel dropdown-element">{text}</button>
     })
 
     return (

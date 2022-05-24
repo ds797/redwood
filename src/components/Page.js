@@ -1,11 +1,16 @@
 import Item from './Item.js';
 import './Page.css';
+import {useState} from 'react'
 
-export const Page = ({ key = 0, content = [{ key: 0, title: 'Triangles', content: 'Triangles have three sides.' }] }) => {
+export const Page = ({baseContent}) => {
+	const [content, setContent] = useState(baseContent)
 	return (
+		<>
+		<DirectBar elems={directoryList} pageManipulator={setContent}/>
 		<main style={{ background: 'black', color: 'white' }}>
-			<Item content={content[key] ?? { title: 'No page found! :(', content: 'Try navigating to another page.' }} />
+			<Item content={content ?? <><h1>No page found!</h1><p>Try navigating to another page.</p></>} />
 		</main>
+		</>
 	);
 }
 

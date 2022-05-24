@@ -10,6 +10,7 @@
 }
 
 .BarElement{
+    float:left;
     position: relative;
     background-color:rgb(0, 0, 0);
     color: red;
@@ -19,6 +20,9 @@
     padding: 10px;
     text-decoration: none;
     white-space: nowrap;
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 1px;
 }
 
 .BarElementWrapper{
@@ -38,6 +42,7 @@
     color: black;
     background-color: red;
 }
+
 
 .dropdown{
     width: fit-content;
