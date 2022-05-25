@@ -1,9 +1,10 @@
 import "./directory.css"
 
+import grab2 from "./content-pages/sem2.js"
 
 function BarElement(props){
-    var list = props.sideHrefs === undefined ? [] : props.sideHrefs.map(({text})=>{
-        return <button onClick={() => props.manip(<p>{props.rel}</p>)} key={text} className="BarElement Rel dropdown-element">{text}</button>
+    var list = props.sideHrefs === undefined ? [] : props.sideHrefs.map(({text},index)=>{
+        return <button onClick={() => props.manip(grab2(index+1))} key={text} className="BarElement Rel dropdown-element">{text}</button>
     })
 
     return (

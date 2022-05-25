@@ -2,6 +2,8 @@ import BarElement from "./BarElement";
 
 
 import "./directory.css"
+
+
 function DirectBar(props){
     var list = []
 
