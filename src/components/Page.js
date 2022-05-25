@@ -13,7 +13,7 @@ export const Page = ({baseContent = <><h1>No page found!</h1><p>Try navigating t
 	return (
 		<>
 		<DirectBar elems={directoryList} pageManipulator={setContent}/>
-		<main style={{ background: 'black', color: 'white' }}>
+		<main style={{ background: 'white', color: 'black' }}>
 			<Item content={content} />
 		</main>
 		</>

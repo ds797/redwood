@@ -1,5 +1,4 @@
 import "./directory.css"
-
 import grab2 from "./content-pages/sem2.js"
 
 function BarElement(props){
