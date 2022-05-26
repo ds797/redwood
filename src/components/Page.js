@@ -9,7 +9,7 @@ var directoryList = [
 ]
 
 export const Page = ({baseContent = <><h1>No page found!</h1><p>Try navigating to another page.</p></>}) => {
-	const [content, setContent] = useState(baseContent)
+	const [content, setContent] = useState(baseContent);
 	return (
 		<>
 		<DirectBar elems={directoryList} pageManipulator={setContent}/>

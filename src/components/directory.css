@@ -1,4 +1,5 @@
 .DirectBar{
+		z-index: 99;
     display: inline-block;
     width: 100vw;
     height: 4vw;
