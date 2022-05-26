@@ -1,5 +1,5 @@
 .DirectBar{
-		z-index: 99;
+	z-index: 99;
     display: inline-block;
     width: 100vw;
     height: 4vw;
@@ -29,6 +29,7 @@
 .BarElementWrapper{
     position: relative;
     float: left;
+    z-index: 999;
 }
 
 .BarElement:not(#barFoot){

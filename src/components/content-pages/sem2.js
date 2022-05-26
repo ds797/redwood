@@ -1,4 +1,4 @@
-import grabUnit1 from "./sem2unit1.js"
+
 import { MathJax } from "better-react-mathjax";
 import Page from "../composition/Page.js";
 import Important from "../composition/Important.js";
