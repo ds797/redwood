@@ -4,11 +4,11 @@ import BarElement from "./BarElement";
 import "./directory.css"
 
 
-function DirectBar(props){
+function DirectBar({ elems, route, setRoute }){
     var list = []
 
-    for (const elem of props.elems){
-        list.push(<BarElement manip={props.pageManipulator} key={elem.rel+elem.text} rel={elem.rel} text={elem.text} sideHrefs={elem.sideHrefs}></BarElement>)
+    for (const elem of elems){
+      list.push(<BarElement manip={i => setRoute(i)} key={elem.rel + elem.text} rel={elem.rel} text={elem.text} sideHrefs={elem.sideHrefs} />)
     }
 
     return (
