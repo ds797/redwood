@@ -14,13 +14,34 @@
 .mathJax{
     position: relative;
     margin-top: 1vh;
+    font-size: 1.5vw;
 }
 
-#mainText{
+#mainTextUnit1{
     max-width: 80vw;
     position: relative;
     word-wrap: break-word;
     float: left;
-    padding-left: 1vw;
+    margin-left: 1vw;
+}
+#calltrigIdentity1Solution{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    font-size: 1vw;
+    color: white;
+    border-radius: 1vw;
+    background-color: blue;
 }
 
+#calltrigIdentity1Solution:hover{
+    background-color: red;
+}
+
+#calltrigIdentity1Solution:hover + #trigIdentity1Solution{
+    display: inline;
+}
+
+#trigIdentity1Solution{
+    display: none;
+}

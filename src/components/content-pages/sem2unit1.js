@@ -34,7 +34,7 @@ const grabUnit1 = () =>{const units = [<>
 		</>} />
 	</>} content={<>
 		<div>
-			<p id="mainText">Trigonometric identities in this unit are used to manipulate one side of a given equation in order to prove equality.
+			<p id="mainTextUnit1">Trigonometric identities in this unit are used to manipulate one side of a given equation in order to prove equality.
 		For Example, these two sides can be proven using know identities of the part: 
 				<br></br>
 				<MathJax className="mathJax">{"\\(\\frac{csc(x) + cot(x)}{tan(x) + sin(x)} = cot(x)csc(x)\\)"}</MathJax>
