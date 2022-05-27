@@ -18,12 +18,11 @@
 }
 
 #mainTextUnit1{
-    max-width: 80vw;
+    max-width: 70vw;
     position: relative;
     word-wrap: break-word;
-    float: left;
-    margin-left: 1vw;
 }
+
 #calltrigIdentity1Solution{
     width: fit-content;
     height: fit-content;
@@ -38,10 +37,23 @@
     background-color: red;
 }
 
-#calltrigIdentity1Solution:hover + #trigIdentity1Solution{
+
+#trigIdentity1Solution:hover{
     display: inline;
 }
 
 #trigIdentity1Solution{
+    position: relative;
+    left: 3vw;
     display: none;
+}
+
+#additionIdentities{
+    position: relative;
+}
+
+#additionIdentities hr:not(.inImportant){
+    width: 100vw;
+    background-color: black;
+    height: 5px;
 }
