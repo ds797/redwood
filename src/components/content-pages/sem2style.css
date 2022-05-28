@@ -1,3 +1,7 @@
+
+#simpleIdentities{
+    left: 1vw;
+}
 #trigIdentities{
     float: left;
     border-style: solid;
@@ -21,12 +25,14 @@
     max-width: 70vw;
     position: relative;
     word-wrap: break-word;
+    left: 5vw;
 }
 
 #calltrigIdentity1Solution{
     width: fit-content;
     height: fit-content;
     padding: 10px;
+    left: 5vw;
     font-size: 1vw;
     color: white;
     border-radius: 1vw;
@@ -44,16 +50,30 @@
 
 #trigIdentity1Solution{
     position: relative;
-    left: 3vw;
+    float: left;
+    left: 5vw;
+    width: fit-content;
     display: none;
+    padding-bottom: 5vh;
 }
 
 #additionIdentities{
     position: relative;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 #additionIdentities hr:not(.inImportant){
+    margin-top: 5vw;
     width: 100vw;
     background-color: black;
     height: 5px;
+    transform: translateX(-5vw);
+}
+
+#additionIdentities{
+    position: relative;
+    left: 1vw;
 }
