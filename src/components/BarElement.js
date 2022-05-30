@@ -1,5 +1,4 @@
 import "./directory.css"
-import grab2 from "./content-pages/sem2.js"
 
 function BarElement(props){
     var list = props.sideHrefs === undefined ? [] : props.sideHrefs.map(({text,route},index)=>{
@@ -9,7 +8,7 @@ function BarElement(props){
     return (
         <>
         <div className="BarElementWrapper">
-            <button className={props.rel==="#" ? "BarElement noRel" : "BarElement Rel"}>{props.text}</button>
+            <button className={props.rel==="#" ? "BarElement noRel" : "BarElement Rel"} onClick={()=>{window.location = props.route}}>{props.text}</button>
             <div className="dropdown" id={props.rel}>
                 {list}
             </div>

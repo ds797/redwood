@@ -1,14 +1,15 @@
-
-#simpleIdentities{
+#specialIdentities{
     left: 1vw;
 }
 #trigIdentities{
+    position: relative;
     float: left;
     border-style: solid;
     border-width: 1px;
     width: fit-content;
     height: fit-content;
     padding: 5px;
+    margin: 3vw;
 }
 
 #trigIdentities > .mathJax{
@@ -23,9 +24,10 @@
 
 #mainTextUnit1{
     max-width: 70vw;
+    font-size: 1.5vw;
     position: relative;
     word-wrap: break-word;
-    left: 5vw;
+    left: 1vw;
 }
 
 #calltrigIdentity1Solution{
@@ -56,11 +58,10 @@
     display: none;
     padding-bottom: 5vh;
 }
-
 #additionIdentities{
-    position: relative;
+    float: left;
+    margin: 1vh;
 }
-
 html{
     overflow-x: hidden;
 }
