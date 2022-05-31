@@ -23,9 +23,11 @@ const App = () => {
 			<DirectBar elems={directoryList} setRoute={setRoute} />
 			<Router>
 				<Routes>
-					{directoryList.map(v => <Route path={v.route}>
-						{v.sideHrefs.map(unit => <Route path={unit.route} element={unit.element} />)}
-					</Route>)}
+					{directoryList.map(v => 
+						<Route path={v.route} element={v.element} />
+					)}
+					{directoryList.map(v => v.sideHrefs.map(unit =>
+						<Route path={unit.route} element={unit.element} />))}
 					<Route path="*" element={<FourOhFour />} />
 				</Routes>
 			</Router>

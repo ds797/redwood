@@ -5,11 +5,11 @@ import BarElement from "./BarElement";
 import "./directory.css"
 
 
-function DirectBar({ elems, route, setRoute }){
+function DirectBar({ elems, setRoute }){
     var list = []
 
     for (const elem of elems){
-      list.push(<BarElement route={route} manip={setRoute} key={elem.rel + elem.text} rel={elem.rel} text={elem.text} sideHrefs={elem.sideHrefs} />)
+      list.push(<BarElement route={elem.route} manip={setRoute} key={elem.rel + elem.text} rel={elem.rel} text={elem.text} sideHrefs={elem.sideHrefs} />)
     }
 
     return (
